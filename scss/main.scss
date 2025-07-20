@@ -1,0 +1,14 @@
+@import "variables";
+@import "mixin";
+@import "global";
+
+// section
+@import "header";
+@import "hero";
+@import "natural";
+@import "about-us";
+@import "categories";
+@import "testimonial";
+body {
+  min-height: 500vh;
+}

@@ -1,0 +1,56 @@
+.about-us {
+  background: #f9f8f8;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    &__content {
+      width: 40%;
+      span {
+        font-size: 36px;
+      }
+      h2 {
+        margin: 8px 0 14px;
+        font-size: 50px;
+        font-weight: 800;
+        color: $bg-py;
+      }
+      p {
+        font-size: 18px;
+        line-height: 165%;
+      }
+      .features {
+        margin: 46px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .feature {
+          display: flex;
+          gap: 20px;
+          &__img {
+            width: 101px;
+            height: 101px;
+            background: #fff;
+            border-radius: 20px;
+            display: grid;
+            place-items: center;
+          }
+          &__text {
+            width: 444px;
+            h3 {
+              font-size: 25px;
+              font-weight: 800;
+              color: $bg-py;
+            }
+            p {
+              font-size: 18px;
+              line-height: 165%;
+            }
+          }
+        }
+      }
+      button {
+        @include btn();
+      }
+    }
+  }
+}
