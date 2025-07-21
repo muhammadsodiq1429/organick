@@ -1,4 +1,66 @@
 .testimonial {
   background: url("../assets/bg.png") no-repeat center/cover;
   height: 1267px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 780px;
+      margin-bottom: 204px;
+      .sub-title {
+        font-size: 36px;
+      }
+      .avatar {
+        width: 115px;
+        height: 115px;
+        img {
+          border-radius: 50%;
+        }
+      }
+      .stars {
+        margin: 20px 0 25px;
+      }
+
+      h4 {
+        font-size: 25px;
+        padding-top: 20px;
+        color: $bg-py;
+      }
+      & > span {
+        color: #525c60;
+        line-height: 165%;
+        font-size: 15px;
+      }
+      .dots {
+        margin-top: 20px;
+      }
+    }
+    .results {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 62px;
+      padding-top: 102px;
+      border-top: 1px solid #e0e0e0;
+      .result {
+        background: #f1f1f1;
+        width: 189px;
+        height: 189px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 7px solid #fff;
+        outline: 5px solid #7eb693;
+        .title {
+          margin: 0;
+        }
+      }
+    }
+  }
 }

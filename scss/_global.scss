@@ -35,3 +35,14 @@ textarea {
   border: none;
   outline: none;
 }
+
+.title {
+  font-size: 50px;
+  font-weight: 800;
+  margin: 8px 0 60px;
+  color: $bg-py;
+}
+.desc {
+  font-size: 18px;
+  line-height: 165%;
+}
